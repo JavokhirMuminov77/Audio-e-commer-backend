@@ -2,6 +2,7 @@
 import  express  from "express";
 import path from "path";
 import router from "./router";
+import routerAdmin from "./routerAdmion";
 
 
 
@@ -22,6 +23,8 @@ app.set('view engine', "ejs");
 
 
 //4 Routers
-app.use("/", router);//Middleware Disagn pattern
+//SSR: EJS
+app.use ("/admin", routerAdmin);//EJS
+app.use("/", router);//React
 
 export default app;
