@@ -1,6 +1,10 @@
 //expressni ulash uchun file
 import  express  from "express";
 import path from "path";
+import router from "./router";
+
+
+
 //1 Enterance => kirish qismi!
 
 const app = express();
@@ -9,9 +13,15 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 //2 Sessions 
+
+
+
 //3 views
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', "ejs");
+
+
 //4 Routers
+app.use("/", router);//Middleware Disagn pattern
 
 export default app;
