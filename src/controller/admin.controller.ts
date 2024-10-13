@@ -32,4 +32,24 @@ adminController.getSignup = (req: Request, res: Response) => {
    
 };
 
+
+adminController.processLogin = (req: Request, res: Response) => {
+    try {
+        console.log("processLogin");
+        res.send("DONE");
+    } catch (err) {
+        console.log("Error, procesLogin", err);
+    }
+}
+
+adminController.processSignup = (req: Request, res: Response) => {
+    try {
+        console.log("processSignup");
+        res.send("DONE");
+    } catch (err) {
+        console.log("Error, procesSignup", err);
+    }
+}
+
+
 export default adminController;
