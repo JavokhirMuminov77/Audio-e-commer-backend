@@ -1,5 +1,5 @@
 import  {Request, Response} from 'express';
-
+import MembrsService from "../models/Member.service";
 import { T } from "../libs/types/common";
 
 
