@@ -6,10 +6,10 @@ routerAdmin.get("/", adminController.goHome);
 
 routerAdmin
   .get("/login", adminController.getLogin)
-//   .post("/login", adminController.processLogin);
+  .post("/login", adminController.processLogin);
 
 routerAdmin
   .get("/signup", adminController.getSignup)
-//   .post("/signup", adminController.procesSignup);
+  .post("/signup", adminController.processSignup);
 
 export default routerAdmin;
